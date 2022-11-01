@@ -36,7 +36,44 @@
 //Includes
 //value = langs.includes("Java")//true
 
-
-
-
 //console.log(value)
+
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+
+//Tenmplate Literal
+const name = "Parviz Hajili"
+const department = "IT & Software"
+const salary = 5000
+
+
+// const a = "Name: " + name + "\n" + "Departmant: " + department + "\n" + "Salary: " + salary
+
+//const a = `Name:${name}\nDepartmant:${department}\nSalary:${salary}`
+
+// const html = "<ul>" +
+//     "<li>" + name + "</li>" +
+//     "<li>" + department + "</li>" +
+//     "<li>" + salary + "</li>" +
+//     "</ul>"
+
+function a(){
+    return "Hello"
+}
+const html = `
+    <ul>
+    <li>${name}</li>
+    <li>${department}</li>
+    <li>${salary}</li>
+    <li>${20*5}</li>
+    <li>${a()}</li>
+    </ul>
+
+`
+
+document.body.innerHTML = html
+//console.log(a)
